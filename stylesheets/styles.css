@@ -1,0 +1,110 @@
+body {
+  background: url('../images/witewall_3.png');
+  font-family: 'Signika Negative', sans-serif;
+  color: #404042;
+}
+
+h1, h3{
+font-family: 'Source Sans Pro', sans-serif;
+font-weight: 900;
+margin-top: -33px;
+font-size: 5em;
+color: #404042;
+}
+h3{
+  font-size: 2.5em;
+}
+.name{
+  text-align: right;
+  margin-top: 33px;
+}
+
+.stack{
+  margin-top: 20px;
+}
+.stack .stack-item{
+  text-align: center;
+  margin:0 20px;
+}
+.stack-item::first-letter{
+  font-weight: bold;
+}
+.title{
+  margin-top: 80px;
+}
+.right{
+  margin-left: 66%;
+}
+.lankard{
+  margin-left:3px;
+}
+.left{
+  margin-bottom: 30px;
+}
+.portfolio{
+  text-align: right;
+  margin-top:85px;
+}
+.resume{
+  text-align: right;
+  margin-top:20px;
+    font-size: 1.5em;
+
+}
+.port-item{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+hr{
+  margin-bottom: 5px;
+}
+
+.resume-portfolio{
+  font-size: 1.5em;
+  margin-top: 16px;
+}
+.resume-portfolio .resume{
+  margin-left: 0;
+}
+.contact-links .link{
+  text-align: center;
+  float: right;
+}
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -75px; 
+ 
+}
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 75px; 
+}
+.site-footer {
+
+}
+
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
