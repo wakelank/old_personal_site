@@ -6,9 +6,13 @@ function anim(elem, millisecs){
       
   $(elem).animate({
     color:"#404042"
-  }, millisecs, function(){anim(elem,millisecs)});
+  }, millisecs, function(){ anim(elem,millisecs) });
+};
 
-
+function navigate(){
+  var page = $(event.target).html();
+  $(event.path[2]).html('');
+  $('.' + page + '-html').slideDown();
 }
 
 $(function(){
@@ -18,15 +22,24 @@ $(function(){
   anim('.github',1100);
   anim('.email',1200);
 
+  $('.index-html').slideDown();
 
+  $('.btn').click(function(event){
+    navigate(event);
+  });
 
-  // $(function() {
-  //       $(".resume").hover(
-  //           function() {
-  //               $(this).animate({ color: "#00ff00" }, 'slow');
-  //           },function() {
-  //               $(this).animate({ color: "#ff0000" }, 'slow');
-  //       });
-  //   });
+  // $('.portfolio').click(function(){
+  //   var elem = event.path[2];
+  //   $(elem).html('');
+  //   $('.portfolio-html').slideDown();
+  // });
+  // $('.resume').click(function(){
+  //   $('.index-html').html('');
+  //   $('.resume-html').slideDown();
+  // });
+  // $('.my_name').click(function(){
+  //   $('.index-html').html('');
+  //   $('.index-html').slideDown();
+  // })
 
-})
+});
