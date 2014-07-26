@@ -3,17 +3,39 @@ function anim(elem, millisecs){
   $(elem).animate({
     color:"#00F7FF"
     }, millisecs );
-      
+
   $(elem).animate({
     color:"#404042"
   }, millisecs, function(){ anim(elem,millisecs) });
 };
 
+function setupHistoryClicks() {
+  addClicker(document.getElementById("portfolio"));
+  addClicker(document.getElementById("resume"));
+}
+
+function addClicker(link) {
+  link.addEventListener("click", function(e) {
+    navigate(link.href);
+    history.pushState(null, null, link.href);
+    e.preventDefault();
+  }, false);
+}
+
+
+
 function navigate(){
+
   var page = $(event.target).html();
   $(event.path[2]).html('');
   $('.' + page + '-html').slideDown();
+
+
 }
+
+window.addEventListener("popstate", function(e) {
+    navigate(location.pathname);
+});
 
 $(function(){
   anim('.resume',800);
@@ -27,6 +49,7 @@ $(function(){
   $('.btn').click(function(event){
     navigate(event);
   });
+setupHistoryClicks();
 
   // $('.portfolio').click(function(){
   //   var elem = event.path[2];
