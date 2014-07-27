@@ -9,33 +9,13 @@ function anim(elem, millisecs){
   }, millisecs, function(){ anim(elem,millisecs) });
 };
 
-function setupHistoryClicks() {
-  addClicker(document.getElementById("portfolio"));
-  addClicker(document.getElementById("resume"));
-}
-
-function addClicker(link) {
-  link.addEventListener("click", function(e) {
-    navigate(link.href);
-    history.pushState(null, null, link.href);
-    e.preventDefault();
-  }, false);
+function navigate(event){
+  debugger;
+  $('.index-html').toggle('slide',300);
 }
 
 
 
-function navigate(){
-
-  var page = $(event.target).html();
-  $(event.path[2]).html('');
-  $('.' + page + '-html').slideDown();
-
-
-}
-
-window.addEventListener("popstate", function(e) {
-    navigate(location.pathname);
-});
 
 $(function(){
   anim('.resume',800);
@@ -44,12 +24,16 @@ $(function(){
   anim('.github',1100);
   anim('.email',1200);
 
-  $('.index-html').slideDown();
+
+ $('.index-html').toggle('slide',300);
+
 
   $('.btn').click(function(event){
     navigate(event);
   });
-setupHistoryClicks();
+$( document ).click(function() {
+  $( ".index-html" ).toggle( "slide",300);
+});
 
   // $('.portfolio').click(function(){
   //   var elem = event.path[2];
