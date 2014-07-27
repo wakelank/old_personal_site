@@ -9,11 +9,12 @@ function anim(elem, millisecs){
   }, millisecs, function(){ anim(elem,millisecs) });
 };
 
-function navigate(event){
-  debugger;
-  $('.index-html').toggle('slide',300);
-}
+function navigate(){
 
+  $(event.path[2]).toggle();
+  var page = $(event.target).html();
+  $('.' + page + '-html').toggle('slide',300);
+}
 
 
 
@@ -31,9 +32,9 @@ $(function(){
   $('.btn').click(function(event){
     navigate(event);
   });
-$( document ).click(function() {
-  $( ".index-html" ).toggle( "slide",300);
-});
+// $( document ).click(function() {
+//   $( ".index-html" ).toggle( "slide",300);
+// });
 
   // $('.portfolio').click(function(){
   //   var elem = event.path[2];
