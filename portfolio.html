@@ -7,17 +7,21 @@
   <link rel='stylesheet' href='stylesheets/skeleton.css'>
   <link rel='stylesheet' href='stylesheets/layout.css'>
   <link rel='stylesheet' href='stylesheets/styles.css'>
+  <link rel="stylesheet" href="stylesheets/jquery-ui-1.10.4.min.css">
 
   <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="stylesheets/font-awesome-4.1.0/css/font-awesome.min.css">
 
   <script type="text/javascript" src="javascripts/jquery.js"></script>
+  <script type="text/javascript" src="javascripts/jquery-ui-1.10.4.min.js"></script>
   <script type="text/javascript" src="javascripts/app.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.js"></script>
+
 </head>
 <body>
   <div class="page-wrap">
     <div class="container">
+      <div class="content portfolio-html">
       <div class="sixteen columns header">
         <div class="name">
           <a href="index.html"><h3>Wake</h3></a></br>
@@ -29,15 +33,15 @@
       <div class="sixteen columns port-item">
         <span class="six columns left-copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet nibh et leo accumsan elementum at eu mi. Nulla consectetur nunc sem, in convallis nunc pretium et.
+            <b>Dollscape:</b> A paper doll app for kids.  Drag and drop clothes and items onto your doll and explore multiple locations to find more treasures.
           </p>
         </span><!--left-copy-->
         <span class="three columns center-image">
-          <img src="http://placekitten.com/140/100">
+          <a href="http://dollscape.herokuapp.com/" target="blank"><img src="images/dollscape.gif"></a>
         </span><!--center-image-->
                 <span class="six columns right-copy">
           <p>
-            Aliquam iaculis mi metus, sit amet consequat massa commodo id. Nam sodales fermentum dui quis tincidunt. Suspendisse aliquam, enim eu eleifend aliquet, est mauris sodales nisl,
+            Ruby on Rails backend.  Utilizes JavaScript and Backbone to make each location's collection of items.  The SVG images are controlled via the SVG.JS library.
           </p>
         </span><!--right-copy-->
 
@@ -46,15 +50,15 @@
       <div class="sixteen columns port-item">
         <span class="six columns left-copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet nibh et leo accumsan elementum at eu mi. Nulla consectetur nunc sem, in convallis nunc pretium et.
+            <b>Twixingboard:</b> One of a kind app that generates musical tones based on Twitter searches.  Tones are based on the mood and frequency of Tweets.  It's never the same.
           </p>
         </span><!--left-copy-->
         <span class="three columns center-image">
-          <img src="http://placekitten.com/140/100">
+        <a href="http://twixingboard.herokuapp.com/" target="blank"><img src="images/twixingboard.gif"></a>
         </span><!--center-image-->
                 <span class="six columns right-copy">
           <p>
-            Aliquam iaculis mi metus, sit amet consequat massa commodo id. Nam sodales fermentum dui quis tincidunt. Suspendisse aliquam, enim eu eleifend aliquet, est mauris sodales nisl,
+            The Twitter API handles the search and returns a list of Tweets.  Ruby and JavaScript analyze the results to produce a tone.  You can have several tones going at once.
           </p>
         </span><!--right-copy-->
 
@@ -63,19 +67,20 @@
       <div class="sixteen columns port-item">
         <span class="six columns left-copy">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet nibh et leo accumsan elementum at eu mi. Nulla consectetur nunc sem, in convallis nunc pretium et.
+            <b>Tinsl:</b> Fantasy baseball but with movies.  Pick actors from the past and try to cast a top-grossing film.  Earnings based on actual movie grosses. Username: guest@guest.com. Password: password  
           </p>
         </span><!--left-copy-->
         <span class="three columns center-image">
-          <img src="http://placekitten.com/140/100">
+          <a href="http://tinsl.herokuapp.com/" target="blank"><img src="images/tinsl.gif"></a>
         </span><!--center-image-->
                 <span class="six columns right-copy">
           <p>
-            Aliquam iaculis mi metus, sit amet consequat massa commodo id. Nam sodales fermentum dui quis tincidunt. Suspendisse aliquam, enim eu eleifend aliquet, est mauris sodales nisl,
+            Ruby on Rails backend, HTML/CSS on the front.  A complex database seed file loads past movies, actors and grosses.  Actor images acquired from TheMovieDB API.
           </p>
         </span><!--right-copy-->
 
       </div><!--port-item-->
+    </div> <!--portfolio-html-->
     </div><!--container-->
   </div><!--page-wrap-->  <div class="sixteen columns footer site-footer container">
     <div class="nine columns alpha resume-portfolio">

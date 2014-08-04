@@ -9,13 +9,26 @@ function anim(elem, millisecs){
   }, millisecs, function(){ anim(elem,millisecs) });
 };
 
-function navigate(){
-
-  $(event.path[2]).toggle();
-  var page = $(event.target).html();
-  $('.' + page + '-html').toggle('slide',300);
-}
-
+// function navigate(){
+//
+//   $(event.path[2]).toggle();
+//   var page = $(event.target).html();
+//   $('.' + page + '-html').toggle('slide',300);
+//   history.pushState(null, null, '#' + page)
+//
+// }
+// window.addEventListener("popstate", function(event) {
+//     console.log(location.pathname);
+// });
+//
+// function navigater(){
+//
+//   $(event.path[2]).toggle();
+//   var page = $(event.target).html();
+//   $('.' + page + '-html').toggle('slide',300);
+//   history.pushState(null, null, '#' + page)
+//
+// }
 
 
 $(function(){
@@ -28,10 +41,12 @@ $(function(){
 
  $('.index-html').toggle('slide',300);
 
+$('.portfolio-html').toggle('slide',300);
+//$('.resume-html').toggle('slide',300);
 
-  $('.btn').click(function(event){
-    navigate(event);
-  });
+  // $('.btn').click(function(event){
+  //   navigate(event);
+  // });
 // $( document ).click(function() {
 //   $( ".index-html" ).toggle( "slide",300);
 // });

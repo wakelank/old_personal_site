@@ -1,3 +1,5 @@
+
+
 body {
   background: url('../images/witewall_3.png');
   font-family: 'Signika Negative', sans-serif;
@@ -19,6 +21,18 @@ a{
 }
 .index-html{
   display:block
+}
+.webdev{
+  margin-top:15px;
+}
+.web{
+  margin-top:1px;
+}
+.wake{
+  margin-top:1px;
+}
+.big-name{
+  margin-top:15px;
 }
 .name{
   text-align: right;
@@ -51,12 +65,10 @@ a{
   text-align: right;
   margin-top:85px;
 }
-.content{
-  display: none;
-}
+
 .resume{
   text-align: right;
-  margin-top:20px;
+  margin-top:80px;
     font-size: 1.5em;
 
 }
@@ -64,6 +76,11 @@ a{
   margin-top:10px;
   margin-bottom: 10px;
 }
+.portfolio-html{
+  display:none;
+}
+
+
 hr{
   margin-bottom: 5px;
 }
